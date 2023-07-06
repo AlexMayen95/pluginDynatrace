@@ -1,0 +1,49 @@
+{
+    "_version": "1.48.0",
+    "sap.app": {
+        "id": "snippet.snippet",
+        "type": "component",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}"
+    },
+    "sap.flp": {
+        "type": "plugin"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "componentName": "snippet.snippet",
+        "resources": {
+            "js": [
+                {
+                    "uri": "lib/dynatrace.js"
+                }
+            ]
+        },
+        "dependencies": {
+            "minUI5Version": "1.109.3",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.ushell": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        }
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "snippetsnippet"
+    }
+}
